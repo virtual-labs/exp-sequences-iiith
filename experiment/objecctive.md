@@ -1,1 +1,0 @@
-To learn to solve problems related to Sequences using Computer Programming. 
