@@ -1,0 +1,26 @@
+<html><head>
+	
+</head>
+<body>
+	<pre>
+		#include&lt;stdio.h&gt;
+int main(){
+-&gt;declare N and scan N
+-&gt;declare an array of size of N 
+  and scan it 
+
+ -&gt;curr_size=1
+ -&gt;max_size = 0   //to take care of empty array
+ for i=1 to N:
+	 if(arr[i]&lt;arr[i-1])
+		++curr_size
+	 else
+		 curr_size=1;
+	 max_size = (max_size&gt;curr_size)?max_size:curr_size
+	
+-&gt; print the maximum size of decreasing 
+  subsequence
+return 0;	
+}
+</pre>
+</body></html>
