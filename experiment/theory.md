@@ -1,16 +1,38 @@
-**Problem 1**
+Sequences are ordered lists of numbers that follow a specific pattern or rule. They are fundamental in mathematics and computer science, appearing in topics such as number theory, data analysis, and algorithm design.
 
-This is a fairly straight-forward problem. We have to determine the length of the longest subsequence in which all the elements are smaller than the previous ones. It is easy to see that each of these decresing subsequences will end either when the current number is bigger than the previous number, or when the current number is the final number in the sequence. Also, the end of one sequence marks the beginning of another sequence. So, this problem is easy to solve if we can note down the lengths of these sequences and find the largest number in them. All this can be done while the input is being read. You just need to keep track of the length of the current sequence and the length of the largest sequence which has been seen till now. As discussed earlier, if the currrent number is lesser than the previous number then the length of the current sequence is incremented by 1, and if the current number is greater than the previous number, then the current sequnce ends and we check whether its length is the greatest that has been seen till now, and we also start a new sequence with length equal to 1. When, then input sequence ends then also the current sequence is deemed as terminated, and we again check its length against the length of the largest sequence seen till now.  
+---
 
+### What is a Sequence?
 
-**Problem 2**
+A **sequence** is an ordered list of numbers, such as 1, 2, 3, 4, 5 or 2, 4, 8, 16. Sequences can be increasing, decreasing, or follow more complex patterns. Understanding sequences helps us analyze trends, predict future values, and solve a variety of computational problems.
 
-This is a very famous problem. It's known as longest increasing subsequence problem.Let us consider a naive approach of solving this problem. For every subsequence if it is a increasing subsequence we try to update the maximum length of the longest increasing subsequence.If we analyse the time complexity of this appraoch it is clear that it is goin to take 2N*N operations. So, if N = 30, this approach would take 32212254720 (~3*1011) operations. Looking at the constraints it is obvious that this algorithm is not feasible. Now we look at the standard solution. You may refer wikipedia for the same.  
+---
 
-Every subsequence has to end with some element of the sequence. So we calculate the length of the longest incresing subsequence subject to the constraint that the subsequence ends with seq[i].Lets say that it is best[i]. The answer will be max(best[0],best[1],...,best[N-1]).   
- 
-**Recursive formulation**
+### Visualizing Sequences
 
-Now the task is to find a recursive formula for best[i]. Assume we know the values of best[0],best[1],..., best[i-1] and now out task is to find best[i]. Seq[i] can form a increasing subsequence with some Seq[j] if Seq[i] > Seq[j] and j < i. Thus the recusive formula is :  
+The image below shows a sequence and how its increasing subsequences can be built step by step. Each line represents the current state of the longest increasing subsequence as new numbers are added. This visualization helps you see how dynamic programming builds up the solution:
 
-**best[i] = max(1,best[j]+1|j< i && Seq[i]>Seq[j])** 
+<div align="center">
+<img src="./images/experiment-image.png" alt="Visualization of building increasing subsequences" width="400"/>
+<br><small>Figure: Building the longest increasing subsequence step by step.</small>
+</div>
+
+---
+
+In this experiment, you will learn to solve **two core problems** related to sequences:
+
+### 1. Longest Continuous Decreasing Subsequence
+
+**Task:** Given a list of numbers, find the length of the longest contiguous subsequence where each number is smaller than the previous one.
+
+**Key Idea:** Track the length of the current decreasing sequence and update the maximum length found so far as you scan the list.
+
+### 2. Longest Increasing Subsequence (LIS)
+
+**Task:** Given a list of numbers, find the length of the longest subsequence (not necessarily contiguous) where each number is larger than the previous one.
+
+**Key Idea:** Use dynamic programming to efficiently build up the solution, as visualized in the image above. At each step, extend the longest increasing subsequence found so far.
+
+---
+
+By mastering these two problems, you will gain foundational skills for analyzing and solving a wide range of sequence-related challenges in algorithms, data analysis, and mathematical modeling. The experiment is designed to build your problem-solving skills through hands-on coding and algorithmic thinking.
