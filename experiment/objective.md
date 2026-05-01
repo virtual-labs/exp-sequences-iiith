@@ -1,1 +1,5 @@
-- To learn to solve problems related to Sequences using Computer Programming. 
+- To understand and identify different types of sequences and their properties.
+- To develop algorithms for finding increasing and decreasing subsequences efficiently using programming.
+- To apply recursive and dynamic programming techniques to solve sequence-related problems.
+- To strengthen analytical and computational thinking by solving sequence-based problems through code.
+- To appreciate the role of sequences in mathematics, computer science, and real-world applications.

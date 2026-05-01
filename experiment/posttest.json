@@ -1,47 +1,90 @@
-[
-{"question":"1. A continue statement causes execution to skip to:",
-"answers":{
-            "a":"the end of the program",
-            "b":"the first statement after the loop",
-            "c":"the statement following the continue statement",
-            "d":"the next iteration of the loop"
-          },
-"correctAnswer":"d"},
-
-{"question":"2. The statement i++; is equivalent to:",
-"answers":{
-            "a":"i = i + i;",
-            "b":"i = i + 1;",
-            "c":"i = i - 1;",
-            "d":"i - - ;"
-          },
-"correctAnswer":"b"},
-
-{"question":"3. Another word for 'looping' is:",
-"answers":{
-            "a":"recapitulation ",
-            "b":"tintinabulation ",
-            "c":"iteration",
-            "d":"reiteration"
-          },
-"correctAnswer":"c"},
-
-{"question":"4. Which looping process is best used when the number of iterations is known?",
-"answers":{
-            "a":"for",
-            "b":"while",
-            "c":"do-while",
-            "d":"all of the above"
-          },
-"correctAnswer":"a"},
-
-{"question":"5.  Which of the following is not an infinite loop.",
-"answers":{
-            "a":"int i = 1 ; while ( 1 ) { i++ ; }",
-            "b":"for( int i =1; i < 10 ; i--) printf('Hello World');",
-            "c":"for(int i =1; i<100; i++) printf('Hello World');",
-            "d":"int i = 0; do{ i-- printf('%d ',i); }while(i>0);"
-          },
-"correctAnswer":"c"}
-
-]
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is a decreasing sequence?",
+      "answers": {
+        "a": "2, 2, 2, 2, 2",
+        "b": "1, 3, 5, 7, 9",
+        "c": "5, 4, 3, 2, 1",
+        "d": "1, 2, 3, 4, 5"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. This is a constant sequence.",
+        "b": "Incorrect. This is an increasing sequence.",
+        "c": "Correct. Each number is smaller than the previous one.",
+        "d": "Incorrect. This is an increasing sequence."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What is the length of the longest increasing subsequence in 1, 3, 2, 10, 4, 5?",
+      "answers": {
+        "a": "5",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. No increasing subsequence of length 5 exists.",
+        "b": "Incorrect. There are longer increasing subsequences.",
+        "c": "Incorrect. There are longer increasing subsequences.",
+        "d": "Correct. The longest increasing subsequence is 1, 3, 4, 5 or 1, 2, 4, 5."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which algorithmic technique is most efficient for finding the longest increasing subsequence in large sequences?",
+      "answers": {
+        "a": "Backtracking",
+        "b": "Dynamic Programming",
+        "c": "Brute force",
+        "d": "Greedy Algorithm"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Backtracking is not efficient for LIS.",
+        "b": "Correct. Dynamic programming is efficient for LIS.",
+        "c": "Incorrect. Brute force is not efficient for large sequences.",
+        "d": "Incorrect. Greedy is not optimal for LIS."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. Which of the following statements about subsequences is TRUE?",
+      "answers": {
+        "a": "A subsequence must include all elements.",
+        "b": "A subsequence can skip elements but maintain order.",
+        "c": "A subsequence is always the same as a substring.",
+        "d": "A subsequence must be contiguous."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Subsequences can be shorter than the sequence.",
+        "b": "Correct. Subsequences can skip elements but keep order.",
+        "c": "Incorrect. Substrings are contiguous, subsequences are not necessarily.",
+        "d": "Incorrect. Only substrings must be contiguous."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which of the following statements about sequences is TRUE?",
+      "answers": {
+        "a": "Sequences must be increasing.",
+        "b": "Sequences must be decreasing.",
+        "c": "All sequences are finite.",
+        "d": "Sequences can be finite or infinite."
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Sequences can have any pattern.",
+        "b": "Incorrect. Sequences can have any pattern.",
+        "c": "Incorrect. Sequences can be infinite.",
+        "d": "Correct. Sequences can be finite or infinite."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
