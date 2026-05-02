@@ -1,0 +1,19 @@
+
+/home/runner/work/exp-sequences-iiith/exp-sequences-iiith/experiment/simulation/js/main.js
+  137:35   warning  Unnecessary escape character: \"  no-useless-escape
+  137:48   warning  Unnecessary escape character: \"  no-useless-escape
+  137:62   warning  Unnecessary escape character: \"  no-useless-escape
+  137:75   warning  Unnecessary escape character: \"  no-useless-escape
+  137:90   warning  Unnecessary escape character: \"  no-useless-escape
+  137:112  warning  Unnecessary escape character: \"  no-useless-escape
+  141:46   warning  Unnecessary escape character: \"  no-useless-escape
+  141:61   warning  Unnecessary escape character: \"  no-useless-escape
+  170:36   warning  Unnecessary escape character: \"  no-useless-escape
+  170:42   warning  Unnecessary escape character: \"  no-useless-escape
+  184:31   warning  Unnecessary escape character: \"  no-useless-escape
+  184:49   warning  Unnecessary escape character: \"  no-useless-escape
+  186:31   warning  Unnecessary escape character: \"  no-useless-escape
+  186:51   warning  Unnecessary escape character: \"  no-useless-escape
+
+✖ 14 problems (0 errors, 14 warnings)
+

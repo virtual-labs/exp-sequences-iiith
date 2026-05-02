@@ -1,0 +1,1 @@
+To explore and understand the mathematical properties and computational techniques of sequences through problem solving, algorithm design, and programming, focusing on increasing and decreasing subsequences and their applications.

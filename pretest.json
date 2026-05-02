@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is a sequence?",
+      "answers": {
+        "a": "An ordered list of numbers",
+        "b": "A random collection of values",
+        "c": "A set of unordered numbers",
+        "d": "A type of sorting algorithm"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. A sequence is an ordered list of numbers.",
+        "b": "Incorrect. Sequences are not random collections.",
+        "c": "Incorrect. A sequence is ordered, not unordered.",
+        "d": "Incorrect. Sequences are not sorting algorithms."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following is an increasing sequence?",
+      "answers": {
+        "a": "2, 2, 2, 2, 2",
+        "b": "10, 8, 6, 4, 2",
+        "c": "1, 2, 3, 4, 5",
+        "d": "5, 4, 3, 2, 1"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. This is a constant sequence.",
+        "b": "Incorrect. This is a decreasing sequence.",
+        "c": "Correct. Each number is larger than the previous one.",
+        "d": "Incorrect. This is a decreasing sequence."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What is the longest continuous decreasing subsequence in 2, 1, 9, 8, 10, 7, 5, 4, 3, 1, 10?",
+      "answers": {
+        "a": "1, 9, 8",
+        "b": "2, 1",
+        "c": "10, 7, 5, 4, 3, 1",
+        "d": "9, 8, 10"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. 1 < 9, so not decreasing.",
+        "b": "Incorrect. This is a shorter decreasing subsequence.",
+        "c": "Correct. This is the longest continuous decreasing subsequence.",
+        "d": "Incorrect. 10 is greater than 8, so not decreasing."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. Which algorithmic technique is commonly used to find the longest increasing subsequence?",
+      "answers": {
+        "a": "Divide and Conquer",
+        "b": "Greedy Algorithm",
+        "c": "Dynamic Programming",
+        "d": "Backtracking"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Divide and conquer is not the main approach here.",
+        "b": "Incorrect. Greedy is not optimal for LIS.",
+        "c": "Correct. Dynamic programming is used for LIS.",
+        "d": "Incorrect. Backtracking is not efficient for this problem."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which of the following statements about sequences is TRUE?",
+      "answers": {
+        "a": "Sequences must be finite.",
+        "b": "A sequence can be increasing, decreasing, or neither.",
+        "c": "Sequences are always random.",
+        "d": "All sequences are increasing."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Sequences can be infinite.",
+        "b": "Correct. Sequences can be increasing, decreasing, or neither.",
+        "c": "Incorrect. Sequences can follow patterns.",
+        "d": "Incorrect. Sequences can have any pattern."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
