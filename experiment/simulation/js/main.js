@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   problemSelect.onchange = () => loadProblem(problemSelect.value);
   submitBtn.onclick = checkAnswers;
   runBtn.onclick = showRuntimeOutput;
-  hintLevelSelect.onchange = () => showHints(+hintLevelSelect.value);
+  hintLevelSelect.onchange = (e) => showHints(+e.target.value);
 });
 
 function populateProblemDropdown() {
@@ -159,6 +159,7 @@ function renderHints() {
     hintLevelSelect.innerHTML += `<option value="${i}">Hint ${i}</option>`;
   }
   showHints(0);
+  hintLevelSelect.onchange = (e) => showHints(+e.target.value);
 }
 
 function showHints(level) {
@@ -192,5 +193,7 @@ function checkAnswers() {
 }
 
 function showRuntimeOutput() {
-  runtimeOutputDiv.innerHTML = `<div class=\"feedback-all-correct\">${currentProblem.runtimeOutput}</div>`;
+  if (compileSuccess && currentProblem) {
+    runtimeOutputDiv.textContent = currentProblem.runtimeOutput;
+  }
 }
