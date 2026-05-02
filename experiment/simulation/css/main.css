@@ -81,8 +81,12 @@ body {
 }
 
 .output-area {
-  min-height: 1.5em;
-  font-size: 1.05em;
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  margin-bottom: 1rem;
+  min-height: 2.2em;
 }
 
 .hints-area {
@@ -93,9 +97,12 @@ body {
 }
 
 .hint {
-  color: #004085;
+  background: #e9ecef;
+  border-radius: 4px;
+  padding: 0.5em 0.75em;
   margin-bottom: 0.5em;
-  font-size: 1.05em;
+  font-size: 1rem;
+  color: #333;
 }
 
 @media (max-width: 767px) {
