@@ -25,13 +25,64 @@ In this experiment, you will learn to solve **two core problems** related to seq
 
 **Task:** Given a list of numbers, find the length of the longest contiguous subsequence where each number is smaller than the previous one.
 
-**Key Idea:** Track the length of the current decreasing sequence and update the maximum length found so far as you scan the list.
+**How to Solve:**
+
+1. **Initialize** two variables: `maxLen` (to store the maximum length found) and `currLen` (to store the current length of the decreasing subsequence). Set both to 1.
+2. **Iterate** through the list from the second element:
+   - If the current number is less than the previous number, increment `currLen`.
+   - Otherwise, reset `currLen` to 1 (since the sequence broke).
+   - After each step, update `maxLen` if `currLen` is greater.
+3. **Result:** After scanning the list, `maxLen` holds the answer.
+
+**Example:**
+
+For the sequence `[5, 4, 3, 2, 6, 4, 3, 2, 1, 7]`, the longest continuous decreasing subsequence is `[6, 4, 3, 2, 1]` with length 5.
+
+**Pseudocode:**
+
+```
+maxLen = 1
+currLen = 1
+for i from 1 to n-1:
+	if arr[i] < arr[i-1]:
+		currLen += 1
+		maxLen = max(maxLen, currLen)
+	else:
+		currLen = 1
+return maxLen
+```
 
 ### 2. Longest Increasing Subsequence (LIS)
 
 **Task:** Given a list of numbers, find the length of the longest subsequence (not necessarily contiguous) where each number is larger than the previous one.
 
-**Key Idea:** Use dynamic programming to efficiently build up the solution, as visualized in the image above. At each step, extend the longest increasing subsequence found so far.
+**How to Solve:**
+
+The classic approach uses **dynamic programming**:
+
+1. **Create** an array `dp` where `dp[i]` stores the length of the longest increasing subsequence ending at index `i`.
+2. **Initialize** all `dp[i]` to 1 (every element is an LIS of length 1 by itself).
+3. **For each** element `i` from 1 to n-1:
+   - For each previous element `j` from 0 to i-1:
+     - If `arr[i] > arr[j]`, update `dp[i] = max(dp[i], dp[j] + 1)`.
+4. **Result:** The answer is the maximum value in `dp`.
+
+**Example:**
+
+For the sequence `[10, 9, 2, 5, 3, 7, 101, 18]`, the LIS is `[2, 3, 7, 101]` with length 4.
+
+**Pseudocode:**
+
+```
+dp = [1] * n
+for i from 1 to n-1:
+	for j from 0 to i-1:
+		if arr[i] > arr[j]:
+			dp[i] = max(dp[i], dp[j] + 1)
+return max(dp)
+```
+
+There are more efficient algorithms (using binary search) with $O(n \log n)$ complexity, but the above is the most intuitive and commonly taught method.
 
 ---
 
